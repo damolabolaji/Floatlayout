@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    width: 50%;
+    margin: 0 auto;
+}
+
+header, footer, article{
+    width: 100%;
+    height: 100px;
+    background: gray;
+    border: 1px solid black;
+    clear: both;
+}
+
+section, section.layout2{
+    width: 100%;
+    height: 300px;
+    background: gray;
+    border: 1px solid black;
+    width: 33.33%;
+    float: left;
+}
+
+section.layout2{
+    width: 50%;
+}
+
+section.layout3{
+    width: 33.33%;
+}
+.layout3 + .layout3{
+    width: 66.66%;
+}
+
+.layout4{
+    width: 20%;
+}
+.layout5{
+    width: calc(100% - (20% * 3));
+}
